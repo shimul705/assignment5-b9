@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket</title>
+
+  <!-- Tailwind css & daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google font raleway -->
+    <link rel="stylesheet" href="./css/font.css">
+</head>
+
+<body>
+
+  <!-- This is a header Part -->
+
+  <header class="w-10/12 m-auto">
+    <!-- This is navbar section -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="text-4xl font-extrabold">Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-medium">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="flex items-center py-4 px-7 text-xl font-bold
+          hover:bg-[#c5edbfbf] bg-[#1DD1001A] border-2 border-[#1DD10066] text-[#1DD100] rounded-md">Bus
+            <img class="ml-3" src="./images/bus-icon.png" alt=""></button>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Header content Section -->
+    <section>
+      <div class="hero lg:h-[47rem] bg-cover bg-center bg-no-repeat"
+        style="background-image: url(./images/banner.png);">
+        <div class="hero-content text-center">
+          <div class="w-4/5">
+            <h1 class="mb-5 text-6xl font-extrabold flex flex-col gap-8">
+              <span class="text-white">End-to-End Travel</span>
+              <span class="text-[#1DD100]">P Paribahan</span>
+            </h1>
+            <p class="mt-4 text-white font-normal text-lg">Yes, you can run unit tests and view the results directly
+              within the app. The integrated testing features allow for a streamlined .</p>
+            <button class="mt-8 py-5 px-7 text-xl font-bold bg-[#1DD100] rounded-xl">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- button hover border - #1cd10029 -->
+    <!-- button hover bg - #1cd100bf -->
+  </header>
+
+
+  <!-- This is main part -->
+
+  <main class="w-10/12 m-auto">
+    <!-- Best offers for you -->
+    <section>
+      <h1 class="text-center font-bold text-4xl mt-28 mb-12">Best offers for you</h1>
+      <div class="flex gap-7">
+
+        <!-- coupon card 1 -->
+        <div class="card gap-5 flex-row w-full bg-[#FFBF0F] shadow-xl">
+
+          <div class="card-body pl-16 py-11 m-auto">
+            <h2 class="text-[#030712CC] font-black text-5xl font-inter">15% OFF</h2>
+            <h2 class="font-inter font-semibold text-2xl">on your next purchase</h2>
+            <p class="font-inter font-medium text-xl text-[#03071280]">use by January 2024</p>
+          </div>
+
+          <figure><img class="h-full" src="./images/cupon-devider.png" alt="Shoes" /></figure>
+
+          <div class="card-body py-16 text-center m-auto">
+            <h1 class="font-bold text-4xl">NEW15</h1>
+            <p class="text-[#03071280] font-medium text-2xl">Coupon Code</p>
+          </div>
+
+        </div>
+        <!-- coupon card 2 -->
+        <div class="card gap-5 flex-row w-full bg-[#FFBF0F] shadow-xl">
+
+          <div class="card-body pl-16 py-11 m-auto">
+            <h2 class="text-[#030712CC] font-black text-5xl font-inter">15% OFF</h2>
+            <h2 class="font-inter font-semibold text-2xl">on your next purchase</h2>
+            <p class="font-inter font-medium text-xl text-[#03071280]">use by January 2024</p>
+          </div>
+
+          <figure><img class="h-full" src="./images/cupon-devider.png" alt="Shoes" /></figure>
+
+          <div class="card-body py-16 text-center m-auto">
+            <h1 class="font-bold text-4xl">NEW15</h1>
+            <p class="text-[#03071280] font-medium text-2xl">Coupon Code</p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </section>
+  </main>
+
+
+
+  <!-- this is footer part -->
+  <footer></footer>
+
+</body>
+
+</html>
