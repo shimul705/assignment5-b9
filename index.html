@@ -67,7 +67,13 @@
 
   <!--=================== This is main part =====================-->
 
-  <main class="">
+  <main>
+
+
+
+    <!-- ==========================================Coupon Part============================================== -->
+    <!-- =================================================================================================== -->
+
 
     <!-- Best offers for you -->
     <section class="w-10/12 m-auto">
@@ -121,16 +127,25 @@
     </section>
 
 
-    <!-- ============================PH Paribahan Section============================ -->
+
+
+
+    <!-- =======================================PH Paribahan Section================================== -->
+    <!-- ============================================================================================= -->
+
     <section>
+      <!-- -----------------------------------------Heading------------------------------------------- -->
+
       <div class="bg-[#F7F8F8] mt-28 rounded-t-[88px] border-[#1DD100] border-t-2">
 
-        <div class="w-10/12 m-auto">
+        <div class="w-10/12 m-auto pb-28">
           <h1 class="text-center font-bold text-4xl pt-28">PH Paribahan</h1>
           <p class="w-3/4 m-auto text-center font-normal text-lg">Yes, you can run unit tests and view the results
             directly within the app. The integrated testing features allow for a streamlined.</p>
 
-          <!--TOP PART ----- Trip Details =====White DIV===== -->
+
+          <!-------------------TOP PART =====Green line Paribahan =====White DIV=====----------------- -->
+
           <div class="card flex-row w-full bg-[#FFF] mt-12 mb-8">
 
             <!-- INNER 1st DIV of White DIV -->
@@ -148,7 +163,8 @@
                   <p class="font-inter">Coach-009-WEB ! AC_Business</p>
                 </div>
 
-                <div class="flex justify-center items-center bg-[#1DD10026] text-[#1DD100] text-lg font-medium gap-1 px-4 rounded-xl">
+                <div
+                  class="flex justify-center items-center bg-[#1DD10026] text-[#1DD100] text-lg font-medium gap-1 px-4 rounded-xl">
                   <span><img src="./images/seat-green.png" alt=""></span>
                   <span class="font-inter">40</span>
                   <span class="font-inter">Seats left</span>
@@ -168,9 +184,12 @@
                 </div>
                 <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
                 <div class="grid grid-cols-3 gap-6">
-                  <div class="col-span-1 bg-[#0307120D] px-5 py-5 rounded-lg text-center"><span class="font-inter font-medium text-base">Boarding Point - Laxmipur</span></div>
-                  <div class="col-span-1 bg-[#0307120D] px-5 py-5 rounded-lg text-center"><span class="font-inter font-medium text-base">Dropping Point - Bogura</span></div>
-                  <div class="col-span-1 bg-[#0307120D] px-5 py-5 rounded-lg text-center"><span class="font-inter font-medium text-base">Est. Time - 11 Hour</span></div>
+                  <div class="col-span-1 bg-[#0307120D] px-5 py-5 rounded-lg text-center"><span
+                      class="font-inter font-medium text-base">Boarding Point - Laxmipur</span></div>
+                  <div class="col-span-1 bg-[#0307120D] px-5 py-5 rounded-lg text-center"><span
+                      class="font-inter font-medium text-base">Dropping Point - Bogura</span></div>
+                  <div class="col-span-1 bg-[#0307120D] px-5 py-5 rounded-lg text-center"><span
+                      class="font-inter font-medium text-base">Est. Time - 11 Hour</span></div>
                 </div>
               </div>
             </div>
@@ -186,93 +205,171 @@
             </div>
           </div>
 
-          <!--BOTTOM PART -- Select Your Seat -->
-          <div class="bg-white rounded-3xl">
+          <!--BOTTOM PART -- ---------------------Select Your Seat---------------------- -->
+          <div class="bg-white rounded-3xl grid grid-cols-11 py-8">
 
             <!-- LEFT side -->
-            <div>
+            <div class="px-8 col-span-7 border-r-2 border-dashed bprder-[0307124D]">
+              <h1 class="font-inter">Select Your Seat</h1>
+
+              <hr class="mt-6 mb-4 border-t-2 border-dashed border-[#03071233]">
+
+              <div class="text-lg font-medium flex justify-between">
+                <p class="flex gap-2">
+                  <span><img src="./images/seat-gray.png" alt=""></span>
+                  <span class="font-inter text-[#03071280]">Available</span>
+                </p>
+                <p class="flex gap-2">
+                  <span><img src="./images/seat-green-filled.png" alt=""></span>
+                  <span class="font-inter text-[#1DD100]">Selected</span>
+                </p>
+              </div>
+              <hr class="mb-6 mt-4 border-t-2 border-dashed border-[#03071233]">
+
+
+
+              <!-- -----Ticket selection------- -->
+
+              <div class="text-lg w-full font-medium text-[#03071280] flex justify-between items-center">
+                <!-- Left Seat -->
+                
+                <div class="grid grid-cols-5 grid-rows-3 gap-8">
+                  <div class="col-span-1"></div>
+                  <div class="col-span-2 px-11 py-4"></div>
+                  <div class="col-span-2 px-11 py-4"></div>
+
+                  <p class="font-inter col-span-1 text-center m-auto">A</p>
+                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A1</button>
+                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A2</button>
+
+                  <p class="font-inter col-span-1 text-center m-auto">B</p>
+                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B1</button>
+                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B2</button>
+                </div>
+
+                <!-- Right Seat -->
+                <div class="grid grid-cols-4 gap-8">
+                  <div class="col-span-2 px-11 py-4"></div>
+                  <button class="col-span-2 px-11 py-4 bg-[#0307121A] rounded-xl"><img src="./images/wheel.png" alt=""></button>
+                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A3</button>
+                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A4</button>
+                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B3</button>
+                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B4</button>
+                </div>
+              </div>
 
             </div>
 
             <!-- RIGHT side -->
-            <div class="w-2/5 p-8">
+            <div class="px-8 col-span-4">
               <h1 class="font-inter">Select Your Seat</h1>
               <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
+              <!-- Seat Class Price -->
               <div class="bg-[#F7F8F8] rounded-xl p-8">
 
                 <!-- ================================================================ -->
-
-                <table class="font-inter w-full">
-                  <thead>
-                    <tr class="">
-                      <th class="font-inter text-left">Seat<span class="badge text-white font-inter bg-[#1DD100]">2</span></th>
-                      <th class="font-inter text-left">Class</th>
-                      <th class="font-inter text-right">Price</th>
-                    </tr>
-                  </thead>
-                  
-                  <tbody class="border-t-2 border-dashed border-[#03071233] text-[#03071299]">
-                    <tr class="">
-                      <td class="font-inter text-left">C2</td>
-                      <td class="font-inter text-left">Economy</td>
-                      <td class="font-inter text-right">$550</td>
-                    </tr>
-                    <tr class="">
-                      <td class="font-inter text-left">C3</td>
-                      <td class="font-inter text-left">Economy</td>
-                      <td class="font-inter text-right">$550</td>
-                    </tr>
-                  </tbody>
-
-                  <!-- <thead class="w-full border-t-2 border-solid border-[#03071233] text-[#03071299]">
-                    <tr class="flex justify-between w-full">
-                      <th class="font-inter text-left">Total Price</th>
-                      <th class="font-inter text-right">BDT<span class="font-inter" >1100</span></th>
-                    </tr>
-                  </thead> -->
-                </table>
-                <hr class="my-3 border-t-2 border-solid border-[#03071233]">
-                <ul >
+                <ul class="font-medium text-base">
                   <li class="flex justify-between ">
-                    <p class="font-inter font-medium text-base">Total Price</p>
-                    <p class="font-inter font-medium text-base">BDT<span class="ml-1 font-inter">1100</span></p>
+                    <p class="font-inter w-1/4">Seat<span class="badge text-white font-inter bg-[#1DD100]">2</span></p>
+                    <p class="font-inter w-1/4 text-center">Class</p>
+                    <p class="font-inter w-1/4 text-right">Price</p>
+                  </li>
                 </ul>
+
+                <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
+
+                <!-- Append Child Part -->
+                <ul id="selectedSeats" class="text-[#03071299] font-normal">
+                  <li class="flex justify-between my-2">
+                    <p class="font-inter">C2</p>
+                    <p class="font-inter">Economy</p>
+                    <p class="font-inter">550</p>
+                  </li>
+
+                  <li class="flex justify-between my-2">
+                    <p class="font-inter">C3</p>
+                    <p class="font-inter">Economy</p>
+                    <p class="font-inter">550</p>
+                  </li>
+
+                  <li class="flex justify-between my-2">
+                    <p class="font-inter"></p>
+                    <p class="font-inter"></p>
+                    <p class="font-inter"></p>
+                  </li>
+
+                  <li class="flex justify-between my-2">
+                    <p class="font-inter"></p>
+                    <p class="font-inter"></p>
+                    <p class="font-inter"></p>
+                  </li>
+                </ul>
+
+                <hr class="my-3 border-t-2 border-solid border-[#03071233]">
+
+                <!-- Calculation Part -->
+                <ul class="font-medium text-base">
+                  <li class="flex justify-between ">
+                    <p class="font-inter">Total Price</p>
+                    <p class="font-inter">BDT<span class="ml-1 font-inter">1100</span></p>
+                  </li>
+                </ul>
+                <!-- Coupon Box -->
                 <div class="flex p-2 rounded-lg bg-white mt-4">
                   <input type="text" placeholder="Type here" class="input w-full" />
-                  <button class="px-5 py-3 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white">Apply</button>
+                  <button
+                    class="px-5 py-3 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white">Apply</button>
                 </div>
-                <ul class="mt-6">
+                <!-- Grand Total -->
+                <ul class="mt-6 font-medium text-base">
                   <li class="flex justify-between ">
-                    <p class="font-inter font-medium text-base">Grand Total</p>
-                    <p class="font-inter font-medium text-base">BDT<span class="ml-1 font-inter">1100</span></p>
-                </ul>
-                
-
-
-
-
-                <!-- <ul >
-                  <li class="flex justify-between ">
-                    <p class="font-inter">Seat<span class="badge">Badge</span></p>
-                    <p class="font-inter">Class</p>
-                    <p class="font-inter">Price</p>
-                </ul>
-                <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
-                <ul id="selectedSeats">
-                  <li class="flex justify-between ">
-                    <p class="font-inter">C2</p>
-                    <p class="font-inter">Economoy</p>
-                    <p class="font-inter">550</p>
+                    <p class="font-inter">Grand Total</p>
+                    <p class="font-inter">BDT<span class="ml-1 font-inter">1100</span></p>
                   </li>
-                  <li class="flex justify-between ">
-                    <p class="font-inter">C3</p>
-                    <p class="font-inter">Economoy</p>
-                    <p class="font-inter">550</p>
-                  </li>
-                </ul> -->
+                </ul>
+
+
+
+
+
+
+
+
 
               </div>
 
+              <!-- User Form -->
+
+              <!-- Passenger Name* -->
+              <label class="form-control w-full mt-3 py-3">
+                <div class="mb-3">
+                  <span class="font-inter font-semibold text-base">Passenger Name*</span>
+                </div>
+                <input type="text" placeholder="Enter your name" class="input font-inter input-bordered w-full" />
+              </label>
+              <!-- Phone Number* -->
+              <label class="form-control w-full py-3">
+                <div class="mb-3">
+                  <span class="font-inter font-semibold text-base">Phone Number*</span>
+                </div>
+                <input type="text" placeholder="Enter your phone number"
+                  class="input font-inter input-bordered w-full" />
+              </label>
+              <!-- Email ID -->
+              <label class="form-control w-full py-3">
+                <div class="mb-3">
+                  <span class="font-inter font-semibold text-base">Email ID</span>
+                </div>
+                <input type="text" placeholder="Enter your email id" class="input font-inter input-bordered w-full" />
+              </label>
+              <!-- Submit Button -->
+              <button
+                class="py-5 w-full my-6 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white">Next</button>
+              <!-- T&C -->
+              <p class="w-4/5 m-auto flex justify-between font-normal text-base underline text-[#03071266]">
+                <a class="font-inter" href="">Terms and Conditions</a>
+                <a class="font-inter" href="">Cancellation Policy</a>
+              </p>
             </div>
           </div>
 
@@ -284,8 +381,9 @@
 
 
 
-  <!-- this is footer part -->
-  <footer class="bg-[#030712] mt-28">
+  <!-- ================================================ this is footer part ============================================-->
+
+  <footer class="bg-[#030712]">
     <div class="w-10/12 m-auto">
       <div class="flex justify-between pt-28 pb-12">
         <div class="">
