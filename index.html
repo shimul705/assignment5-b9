@@ -195,20 +195,81 @@
             </div>
 
             <!-- RIGHT side -->
-            <div class="w-2/5">
-              <h1>Select Your Seat</h1>
+            <div class="w-2/5 p-8">
+              <h1 class="font-inter">Select Your Seat</h1>
               <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
               <div class="bg-[#F7F8F8] rounded-xl p-8">
-                <ul class="flex justify-between">
-                  <li>Seat<span class="badge">Badge</span></li>
-                  <li>Class</li>
-                  <li>Price</li>
+
+                <!-- ================================================================ -->
+
+                <table class="font-inter w-full">
+                  <thead>
+                    <tr class="">
+                      <th class="font-inter text-left">Seat<span class="badge text-white font-inter bg-[#1DD100]">2</span></th>
+                      <th class="font-inter text-left">Class</th>
+                      <th class="font-inter text-right">Price</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody class="border-t-2 border-dashed border-[#03071233] text-[#03071299]">
+                    <tr class="">
+                      <td class="font-inter text-left">C2</td>
+                      <td class="font-inter text-left">Economy</td>
+                      <td class="font-inter text-right">$550</td>
+                    </tr>
+                    <tr class="">
+                      <td class="font-inter text-left">C3</td>
+                      <td class="font-inter text-left">Economy</td>
+                      <td class="font-inter text-right">$550</td>
+                    </tr>
+                  </tbody>
+
+                  <!-- <thead class="w-full border-t-2 border-solid border-[#03071233] text-[#03071299]">
+                    <tr class="flex justify-between w-full">
+                      <th class="font-inter text-left">Total Price</th>
+                      <th class="font-inter text-right">BDT<span class="font-inter" >1100</span></th>
+                    </tr>
+                  </thead> -->
+                </table>
+                <hr class="my-3 border-t-2 border-solid border-[#03071233]">
+                <ul >
+                  <li class="flex justify-between ">
+                    <p class="font-inter font-medium text-base">Total Price</p>
+                    <p class="font-inter font-medium text-base">BDT<span class="ml-1 font-inter">1100</span></p>
+                </ul>
+                <div class="flex p-2 rounded-lg bg-white mt-4">
+                  <input type="text" placeholder="Type here" class="input w-full" />
+                  <button class="px-5 py-3 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white">Apply</button>
+                </div>
+                <ul class="mt-6">
+                  <li class="flex justify-between ">
+                    <p class="font-inter font-medium text-base">Grand Total</p>
+                    <p class="font-inter font-medium text-base">BDT<span class="ml-1 font-inter">1100</span></p>
+                </ul>
+                
+
+
+
+
+                <!-- <ul >
+                  <li class="flex justify-between ">
+                    <p class="font-inter">Seat<span class="badge">Badge</span></p>
+                    <p class="font-inter">Class</p>
+                    <p class="font-inter">Price</p>
                 </ul>
                 <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
-                <ul>
-                  <li></li>
-                  <li></li>
-                </ul>
+                <ul id="selectedSeats">
+                  <li class="flex justify-between ">
+                    <p class="font-inter">C2</p>
+                    <p class="font-inter">Economoy</p>
+                    <p class="font-inter">550</p>
+                  </li>
+                  <li class="flex justify-between ">
+                    <p class="font-inter">C3</p>
+                    <p class="font-inter">Economoy</p>
+                    <p class="font-inter">550</p>
+                  </li>
+                </ul> -->
 
               </div>
 
