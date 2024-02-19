@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ticket</title>
+  <title>SM Ticket</title>
 
   <!-- Tailwind css & daisy UI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -21,9 +21,9 @@
   <header class="w-10/12 m-auto">
     <!-- This is navbar section -->
     <nav>
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-base-100 pt-16">
         <div class="navbar-start">
-          <a class="text-4xl font-extrabold">Ticket</a>
+          <a class="text-4xl font-extrabold">SM Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-lg font-medium">
@@ -44,21 +44,54 @@
     </nav>
 
     <!-- Header content Section -->
-    <section>
-      <div class="hero lg:h-[47rem] bg-cover bg-center bg-no-repeat rounded-3xl"
+    <section class="relative">
+      <div class="hero lg:h-[47rem] bg-cover bg-center bg-no-repeat rounded-[2.8rem] mt-8"
         style="background-image: url(./images/banner.png);">
-        <div class="hero-content text-center">
+        <div class="hero-content text-center ">
           <div class="w-4/5">
             <h1 class="mb-5 text-6xl font-extrabold flex flex-col gap-8">
               <span class="text-white">End-to-End Travel</span>
-              <span class="text-[#1DD100]">P Paribahan</span>
+              <span class="text-[#1DD100]">SM Paribahan</span>
             </h1>
-            <p class="mt-4 text-white font-normal text-lg">Yes, you can run unit tests and view the results directly
-              within the app. The integrated testing features allow for a streamlined .</p>
-            <button class="mt-8 py-5 px-7 text-xl font-bold bg-[#1DD100] rounded-xl">Buy Tickets</button>
+            <p class="mt-5 text-white font-normal text-lg">Experience seamless travel with SM Paribahan. Our integrated testing features enable you to run unit tests and conveniently view the results directly within the app, ensuring a streamlined process from start to finish.</p>
+            <button onclick="scrollToSection()" class="mt-8 py-5 px-7 text-xl font-bold bg-[#1DD100] rounded-xl" >Buy Tickets</button>
+            
           </div>
         </div>
       </div>
+      <!-- ======================================================================= -->
+      <div class="w-full flex justify-center absolute -bottom-14">
+        <div class="flex shadow gap-6">
+          <!-- sat 1 -->
+          <div class="py-9 px-8 flex justify-center gap-4 border-[#1DD100] border-b-2">
+            <img src="./images/people.png" alt="">
+            <div>
+              <h1 class="text-4xl font-inter font-bold">500K+</h1>
+              <p class="text-lg font-inter font-normal">Registered users</p>
+            </div>
+          </div>
+
+          <!-- Stat2 -->
+          <div class="py-9 px-8 flex justify-center gap-4 border-[#1DD100] border-b-2">
+            <img src="./images/people.png" alt="">
+            <div>
+              <h1 class="text-4xl font-inter font-bold">500K+</h1>
+              <p class="text-lg font-inter font-normal">Registered users</p>
+            </div>
+          </div>
+
+          <!-- Stat3 -->
+          <div class="py-9 px-8 flex justify-center gap-4 border-[#1DD100] border-b-2">
+            <img src="./images/people.png" alt="">
+            <div>
+              <h1 class="text-4xl font-inter font-bold">500K+</h1>
+              <p class="text-lg font-inter font-normal">Registered users</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- ======================================================================= -->
     </section>
     <!-- button hover border - #1cd10029 -->
     <!-- button hover bg - #1cd100bf -->
@@ -130,17 +163,17 @@
 
 
 
-    <!-- =======================================PH Paribahan Section================================== -->
-    <!-- ============================================================================================= -->
+    <!-- =======================================SM Paribahan Section================================== -->
+    <!-- ================================================== id"Paribahan">"=========================================== -->
 
-    <section>
+    <section id="Paribahan">
       <!-- -----------------------------------------Heading------------------------------------------- -->
 
       <div class="bg-[#F7F8F8] mt-28 rounded-t-[88px] border-[#1DD100] border-t-2">
 
         <div class="w-10/12 m-auto pb-28">
-          <h1 class="text-center font-bold text-4xl pt-28">PH Paribahan</h1>
-          <p class="w-3/4 m-auto text-center font-normal text-lg">Yes, you can run unit tests and view the results
+          <h1 class="text-center font-bold text-4xl pt-28">SM Paribahan</h1>
+          <p class="w-3/4 m-auto text-center font-normal text-lg pt-6">Yes, you can run unit tests and view the results
             directly within the app. The integrated testing features allow for a streamlined.</p>
 
 
@@ -166,7 +199,7 @@
                 <div
                   class="flex justify-center items-center bg-[#1DD10026] text-[#1DD100] text-lg font-medium gap-1 px-4 rounded-xl">
                   <span><img src="./images/seat-green.png" alt=""></span>
-                  <span class="font-inter">40</span>
+                  <span class="font-inter" id="totalSeats">40</span>
                   <span class="font-inter">Seats left</span>
                 </div>
               </div>
@@ -210,7 +243,7 @@
 
             <!-- LEFT side -->
             <div class="px-8 col-span-7 border-r-2 border-dashed bprder-[0307124D]">
-              <h1 class="font-inter">Select Your Seat</h1>
+              <h1 class="font-inter font-semibold text-2xl">Select Your Seat</h1>
 
               <hr class="mt-6 mb-4 border-t-2 border-dashed border-[#03071233]">
 
@@ -237,24 +270,72 @@
                   <div class="col-span-1"></div>
                   <div class="col-span-2 px-11 py-4"></div>
                   <div class="col-span-2 px-11 py-4"></div>
-
+                  <!-- A -->
                   <p class="font-inter col-span-1 text-center m-auto">A</p>
-                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A1</button>
-                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A2</button>
-
+                  <button id="A1" onclick="selectSeat('A1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A1</button>
+                  <button id="A2" onclick="selectSeat('A2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A2</button>
+                  <!-- B -->
                   <p class="font-inter col-span-1 text-center m-auto">B</p>
-                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B1</button>
-                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B2</button>
+                  <button id="B1" onclick="selectSeat('B1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B1</button>
+                  <button id="B2" onclick="selectSeat('B2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B2</button>
+                  <!-- C -->
+                  <p class="font-inter col-span-1 text-center m-auto">C</p>
+                  <button id="C1" onclick="selectSeat('C1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">C1</button>
+                  <button id="C2" onclick="selectSeat('C2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">C2</button>
+                  <!-- D -->
+                  <p class="font-inter col-span-1 text-center m-auto">D</p>
+                  <button id="D1" onclick="selectSeat('D1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">D1</button>
+                  <button id="D2" onclick="selectSeat('D2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">D2</button>
+                  <!-- E -->
+                  <p class="font-inter col-span-1 text-center m-auto">E</p>
+                  <button id="E1" onclick="selectSeat('E1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">E1</button>
+                  <button id="E2" onclick="selectSeat('E2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">E2</button>
+                  <!-- F -->
+                  <p class="font-inter col-span-1 text-center m-auto">F</p>
+                  <button id="F1" onclick="selectSeat('F1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">F1</button>
+                  <button id="F2" onclick="selectSeat('F2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">F2</button>
+                  <!-- G -->
+                  <p class="font-inter col-span-1 text-center m-auto">G</p>
+                  <button id="G1" onclick="selectSeat('G1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">G1</button>
+                  <button id="G2" onclick="selectSeat('G2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">G2</button>
+                  <!-- H -->
+                  <p class="font-inter col-span-1 text-center m-auto">H</p>
+                  <button id="H1" onclick="selectSeat('H1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">H1</button>
+                  <button id="H2" onclick="selectSeat('H2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">H2</button>
+                  <!-- i -->
+                  <p class="font-inter col-span-1 text-center m-auto">I</p>
+                  <button id="I1" onclick="selectSeat('I1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">I1</button>
+                  <button id="I2" onclick="selectSeat('I2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">I2</button>
+                  <!-- J -->
+                  <p class="font-inter col-span-1 text-center m-auto">J</p>
+                  <button id="J1" onclick="selectSeat('J1')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">J1</button>
+                  <button id="J2" onclick="selectSeat('J2')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">J2</button>
                 </div>
 
                 <!-- Right Seat -->
                 <div class="grid grid-cols-4 gap-8">
                   <div class="col-span-2 px-11 py-4"></div>
                   <button class="col-span-2 px-11 py-4 bg-[#0307121A] rounded-xl"><img src="./images/wheel.png" alt=""></button>
-                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A3</button>
-                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A4</button>
-                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B3</button>
-                  <button class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B4</button>
+                  <button id="A3" onclick="selectSeat('A3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A3</button>
+                  <button id="A4" onclick="selectSeat('A4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A4</button>
+                  <button id="B3" onclick="selectSeat('B3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B3</button>
+                  <button id="B4" onclick="selectSeat('B4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B4</button>
+                  <button id="C3" onclick="selectSeat('C3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">C3</button>
+                  <button id="C4" onclick="selectSeat('C4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">C4</button>
+                  <button id="D3" onclick="selectSeat('D3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">D3</button>
+                  <button id="D4" onclick="selectSeat('D4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">D4</button>
+                  <button id="E3" onclick="selectSeat('E3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">E3</button>
+                  <button id="E4" onclick="selectSeat('E4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">E4</button>
+                  <button id="F3" onclick="selectSeat('F3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">F3</button>
+                  <button id="F4" onclick="selectSeat('F4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">F4</button>
+                  <button id="G3" onclick="selectSeat('G3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">G3</button>
+                  <button id="G4" onclick="selectSeat('G4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">G4</button>
+                  <button id="H3" onclick="selectSeat('H3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">H3</button>
+                  <button id="H4" onclick="selectSeat('H4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">H4</button>
+                  <button id="I3" onclick="selectSeat('I3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">I3</button>
+                  <button id="I4" onclick="selectSeat('I4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">I4</button>
+                  <button id="J3" onclick="selectSeat('J3')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">J3</button>
+                  <button id="J4" onclick="selectSeat('J4')" class="col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">J4</button>
                 </div>
               </div>
 
@@ -262,15 +343,15 @@
 
             <!-- RIGHT side -->
             <div class="px-8 col-span-4">
-              <h1 class="font-inter">Select Your Seat</h1>
+              <h1 class="font-inter font-semibold text-2xl">Select Your Seat</h1>
               <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
               <!-- Seat Class Price -->
-              <div class="bg-[#F7F8F8] rounded-xl p-8">
+              <div class="bg-[#F7F8F8] rounded-xl p-8 mb-8">
 
                 <!-- ================================================================ -->
                 <ul class="font-medium text-base">
                   <li class="flex justify-between ">
-                    <p class="font-inter w-1/4">Seat<span class="badge text-white font-inter bg-[#1DD100]">2</span></p>
+                    <p class="font-inter w-1/4">Seat<span id="badge" class="badge ml-1 text-white font-inter bg-[#1DD100]">0</span></p>
                     <p class="font-inter w-1/4 text-center">Class</p>
                     <p class="font-inter w-1/4 text-right">Price</p>
                   </li>
@@ -280,29 +361,7 @@
 
                 <!-- Append Child Part -->
                 <ul id="selectedSeats" class="text-[#03071299] font-normal">
-                  <li class="flex justify-between my-2">
-                    <p class="font-inter">C2</p>
-                    <p class="font-inter">Economy</p>
-                    <p class="font-inter">550</p>
-                  </li>
-
-                  <li class="flex justify-between my-2">
-                    <p class="font-inter">C3</p>
-                    <p class="font-inter">Economy</p>
-                    <p class="font-inter">550</p>
-                  </li>
-
-                  <li class="flex justify-between my-2">
-                    <p class="font-inter"></p>
-                    <p class="font-inter"></p>
-                    <p class="font-inter"></p>
-                  </li>
-
-                  <li class="flex justify-between my-2">
-                    <p class="font-inter"></p>
-                    <p class="font-inter"></p>
-                    <p class="font-inter"></p>
-                  </li>
+                  
                 </ul>
 
                 <hr class="my-3 border-t-2 border-solid border-[#03071233]">
@@ -311,29 +370,28 @@
                 <ul class="font-medium text-base">
                   <li class="flex justify-between ">
                     <p class="font-inter">Total Price</p>
-                    <p class="font-inter">BDT<span class="ml-1 font-inter">1100</span></p>
+                    <p class="font-inter">BDT<span id="TotalPrice" class="ml-1 font-inter">0</span></p>
                   </li>
                 </ul>
                 <!-- Coupon Box -->
-                <div class="flex p-2 rounded-lg bg-white mt-4">
-                  <input type="text" placeholder="Type here" class="input w-full" />
-                  <button
-                    class="px-5 py-3 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white">Apply</button>
+                <div id="couponBox" class="flex p-2 rounded-lg bg-white mt-4" disabled>
+                  <input id="couponInput" type="text" placeholder="Have any copupon?" class="input w-full disabled:bg-[#F7F8F8]" disabled/>
+                  <button id="applyCouponButton"
+                    class="px-5 py-3 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white disabled:bg-[#F7F8F8]" disabled>Apply</button>
                 </div>
+
+                <!-- Hidden Massage Part -->
+                <div id="couponSuccessMessage" class="text-[#03071299] font-normal flex justify-between hidden">
+                  
+                </div>
+
                 <!-- Grand Total -->
                 <ul class="mt-6 font-medium text-base">
                   <li class="flex justify-between ">
                     <p class="font-inter">Grand Total</p>
-                    <p class="font-inter">BDT<span class="ml-1 font-inter">1100</span></p>
+                    <p class="font-inter">BDT<span id="GrandTotal" class="ml-1 font-inter">0</span></p>
                   </li>
                 </ul>
-
-
-
-
-
-
-
 
 
               </div>
@@ -345,26 +403,26 @@
                 <div class="mb-3">
                   <span class="font-inter font-semibold text-base">Passenger Name*</span>
                 </div>
-                <input type="text" placeholder="Enter your name" class="input font-inter input-bordered w-full" />
+                <input type="text" placeholder="Enter your name" class="input font-inter input-bordered w-full" required/>
               </label>
               <!-- Phone Number* -->
               <label class="form-control w-full py-3">
                 <div class="mb-3">
                   <span class="font-inter font-semibold text-base">Phone Number*</span>
                 </div>
-                <input type="text" placeholder="Enter your phone number"
-                  class="input font-inter input-bordered w-full" />
+                <input id="phoneNumberInput" type="tel" placeholder="Enter your phone number"
+                  class="input font-inter input-bordered w-full" required />
               </label>
               <!-- Email ID -->
               <label class="form-control w-full py-3">
                 <div class="mb-3">
                   <span class="font-inter font-semibold text-base">Email ID</span>
                 </div>
-                <input type="text" placeholder="Enter your email id" class="input font-inter input-bordered w-full" />
+                <input type="email" placeholder="Enter your email id" class="input font-inter input-bordered w-full" />
               </label>
               <!-- Submit Button -->
-              <button
-                class="py-5 w-full my-6 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white">Next</button>
+              <button id="nextButton" for="my_modal_7"
+                class="py-5 w-full my-6 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white disabled:bg-[#F7F8F8]" type="submit" >Next</button>
               <!-- T&C -->
               <p class="w-4/5 m-auto flex justify-between font-normal text-base underline text-[#03071266]">
                 <a class="font-inter" href="">Terms and Conditions</a>
@@ -373,10 +431,10 @@
             </div>
           </div>
 
-
         </div>
       </div>
     </section>
+    
   </main>
 
 
@@ -412,6 +470,28 @@
     </div>
   </footer>
 
+
+
+
+  
+
+  <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+  <div class="modal" role="dialog">
+    <div class="modal-box flex justify-center flex-col text-center p-14 max-w-none w-1/3">
+      <div class="flex justify-center">
+        <img src="./images/success.png" alt="">
+      </div>
+      <h3 class="text-2xl font-bold font-bold text-[#27AE60] mt-9 font-roboto">SUCCESS</h3>
+      <p class="py-4 text-xl font-roboto font-medium text-[#4A4A4A] ">Thank you for booking our bus seats! We're committed to finding you the best service and deals.</p>
+      <p class="font-light font-roboto text-xl text-[#4A4A4A]">Shortly you will find a confirmation in your email.</p>
+      <div>
+        <button id="continueButton" class="px-28 py-4 bg-[#27AE60] rounded-3xl text-xl font-roboto font-bold mt-5 text-white">Continue</button>
+      </div>
+    </div>
+    <label class="modal-backdrop" for="my_modal_7">Close</label>
+  </div>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
