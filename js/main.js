@@ -130,7 +130,7 @@ function applyCoupon() {
   const SuccessMessage=document.getElementById('couponSuccessMessage');
   SuccessMessage.innerHTML=
     `<li id="couponDiscountApplied" class="flex justify-between">
-      <p class="font-inter">Coupon Discounted (Applied)</p>
+      <p class="font-inter">Coupon Discount (Applied)</p>
       <p class="font-inter">BDT<span id="couponDiscountAmount" class="ml-1 font-inter">-${totalPrice - grandTotal}</span></p>
     </li>`;
   // Display the coupon success message
