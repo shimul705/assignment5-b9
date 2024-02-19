@@ -1,9 +1,8 @@
 function scrollToSection() {
-  // Select the target section by its ID
+  // Select the target section by ID
   var targetSection = document.getElementById('Paribahan');
 
-  // Scroll to the target section using the scrollTo method
-  targetSection.scrollIntoView({ behavior: 'smooth' });
+  targetSection.scrollIntoView({ behavior:'smooth'});
 }
 
 
@@ -11,23 +10,24 @@ function scrollToSection() {
 
 let selectedSeats = [];
 function selectSeat(seatID) {
-  const seat = document.getElementById(seatID);
+  const seat=document.getElementById(seatID);
 
   // Check if the seat is already selected
   if (selectedSeats.includes(seatID)) {
-    return; // Seat already selected, do nothing
+    return; 
+    // Seat already selected, do nothing
   }
 
-  // Ensure only a maximum of 4 seats can be selected
+  // Ensure maximum of 4 seats can be selected
   if (selectedSeats.length >= 4) {
     alert('Maximum 4 seats can be selected.');
     return;
   }
 
-  // Add seat to the selectedSeats array
+  // Add selectedSeats array
   selectedSeats.push(seatID);
 
-  // Add or remove the classes for background color and text color
+  //background color and text color
   seat.style.backgroundColor = '#1DD100';
   seat.classList.add('text-white');
 
@@ -41,15 +41,15 @@ function selectSeat(seatID) {
     `;
   document.getElementById('selectedSeats').appendChild(seatDetails);
 
-  // Update the selected seat count in the span element
-  const selectedSeatCount = document.getElementById('selectedSeats').childElementCount;
+  // Update selected seat count in the span
+  const selectedSeatCount =document.getElementById('selectedSeats').childElementCount;
   document.getElementById('badge').textContent = selectedSeatCount;
 
   // Decrease the total seat number by 1
-  const totalSeatsElement = document.getElementById('totalSeats');
+  const totalSeatsElement =document.getElementById('totalSeats');
   let totalSeats = parseInt(totalSeatsElement.textContent);
   totalSeats--;
-  totalSeatsElement.textContent = totalSeats;
+  totalSeatsElement.textContent=totalSeats;
 
   calculateTotalPrice();
   checkNextButton();
