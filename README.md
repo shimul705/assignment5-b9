@@ -23,6 +23,32 @@ An interactive bus ticket booking page for **SM Paribahan**. Pick your seats, se
 
 ---
 
+## 🎟️ Try It Yourself
+
+### Coupon codes
+
+| Coupon Code | Discount | 4 seats (2200 BDT) → Grand Total |
+|---|---|---|
+| `NEW15` | 15% OFF | **1870 BDT** (save 330) |
+| `Couple 20` | 20% OFF | **1760 BDT** (save 440) |
+
+> Codes are **case-sensitive**. Type them exactly as shown, including the space in `Couple 20`. The coupon box unlocks only after you select **4 seats**.
+
+### Test steps
+
+1. Open the [live site](https://shimul705.github.io/assignment5-b9/) and click **Buy Tickets**.
+2. Select **4 seats**. Each one turns green and is added to the summary at 550 BDT.
+3. Enter `NEW15` or `Couple 20` and click **Apply** to see the discount.
+4. Enter a passenger name and an **11-digit** phone number (e.g. `01712345678`).
+5. Click **Next** to open the **SUCCESS** modal.
+
+**Edge cases to try:**
+- Select a 5th seat to get the "Seat Limit Reached" modal.
+- Enter a wrong coupon code to get the "Invalid Coupon" modal.
+- Click Next with a missing seat, name or phone to get a warning that says what's missing.
+
+---
+
 ## 📌 Overview
 
 **SM Ticket** is my fifth Programming Hero assignment, and the first one where **the page actually does something**.
@@ -95,7 +121,7 @@ cd assignment5-b9
 
 Then open `index.html` in any browser. No build step is required, but an internet connection is needed for the Tailwind, DaisyUI and Google Fonts CDNs.
 
-**Try it:** select 4 seats, enter `NEW15` or `Couple 20` as the coupon, type an 11-digit phone number, then click **Next**.
+**Try it:** see the **🎟️ Try It Yourself** section above for the coupon codes and test steps.
 
 ---
 
