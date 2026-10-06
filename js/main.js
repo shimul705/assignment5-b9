@@ -52,7 +52,6 @@ function selectSeat(seatID) {
   totalSeatsElement.textContent=totalSeats;
 
   calculateTotalPrice();
-  checkNextButton();
 }
 
 
@@ -146,11 +145,12 @@ calculateTotalPrice();
 
 
 function checkNextButton() {
-  // Get phone number input and Next button
+  // Get passenger name and phone number input
+  const passengerNameInput = document.getElementById('passengerNameInput');
   const phoneNumberInput = document.getElementById('phoneNumberInput');
-  const nextButton = document.getElementById('nextButton');
 
-  //phone number trim
+  //name and phone number trim
+  const passengerName = passengerNameInput.value.trim();
   const phoneNumber = phoneNumberInput.value.trim();
 
   //Phone Number validation
@@ -160,17 +160,18 @@ function checkNextButton() {
   const seatCount = parseInt(document.getElementById('badge').textContent);
   const selectedSeat = seatCount >= 1;
 
-  // Enable or disable the Next button based on conditions
-  if (validPhoneNumber && selectedSeat) {
-    nextButton.removeAttribute('disabled');
+  // Show what is missing, otherwise show the success modal
+  if (!selectedSeat) {
+    showWarning('No Seat Selected', 'Please select at least 1 seat to continue.');
+  } else if (passengerName === '') {
+    showWarning('Name Required', 'Please enter the passenger name.');
+  } else if (!validPhoneNumber) {
+    showWarning('Invalid Phone Number', 'Please enter an 11-digit phone number (e.g. 01712345678).');
   } else {
-    nextButton.setAttribute('disabled', true);
+    toggleModal();
   }
 
 }
-//phone number----- input field
-document.getElementById('phoneNumberInput').addEventListener('input', checkNextButton);
-checkNextButton();
 
 // ===========================================
 //appear the modal
@@ -183,7 +184,7 @@ function toggleModal() {
 // ===========================================
 // Get Next button by ID
 const nextButton = document.getElementById('nextButton');
-nextButton.addEventListener('click', toggleModal);
+nextButton.addEventListener('click', checkNextButton);
 
 //modal Continue button by id
 const continueButton = document.getElementById('continueButton');

@@ -41,7 +41,7 @@ Assignment 3 taught me Tailwind and DaisyUI, and Assignment 4 taught me JavaScri
    - You can select at most **4 seats**. Trying a 5th opens a **warning modal**.
 5. **Price Calculation:** the **Total Price** and **Grand Total** update after every seat (550 BDT per seat).
 6. **Coupon:** the coupon box unlocks only when 4 seats are selected. A valid code applies the discount and shows the saved amount. An invalid code opens the warning modal.
-7. **Passenger Form:** name, phone and email fields. **Next** is enabled only when at least 1 seat is selected **and** the phone number has exactly 11 digits.
+7. **Passenger Form:** name, phone and email fields. Clicking **Next** checks that at least 1 seat is selected, a name is entered and the phone number has exactly 11 digits. If anything is missing, the warning modal says exactly what.
 8. **Success Modal:** a booking confirmation popup. **Continue** resets the page.
 9. **Footer:** the brand, an app download badge and policy links.
 
@@ -108,7 +108,8 @@ The booking logic is my original February 2024 code. In **2026**, while organisi
 | On devices in **dark mode**, DaisyUI switched the whole page to its dark theme, and text and inputs looked wrong | Added `data-theme="light"` so the page always shows the light design it was made for |
 | The page was **desktop-only**: on mobile and tablet the stat cards, coupons, route details and seat map overflowed or overlapped | Added Tailwind breakpoint classes (`md:` `lg:` `xl:` `2xl:`) to every section. The desktop design is unchanged |
 | The 4-seat limit and coupon errors used the browser's `alert()` popup | Replaced it with a DaisyUI **warning modal** that matches the success modal's style (`showWarning()` in `main.js`) |
-| The success modal was fixed at `w-1/3`, too narrow on phones | Made it responsive (`w-11/12` on mobile up to `w-1/3` on desktop) |
+| **Next** stayed silently disabled (an invisible grey button with white text) until the phone number was valid, so the SUCCESS modal seemed missing | Next is always green, as in the Figma. Clicking it validates seat, name and phone, then opens the warning modal or the SUCCESS modal |
+| The success modal was fixed at `w-1/3`, too narrow on phones, and its text differed from the Figma | Made it responsive (`w-11/12` on mobile up to `w-1/3` on desktop) and matched the Figma text |
 
 ---
 

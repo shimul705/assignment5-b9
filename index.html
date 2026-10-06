@@ -411,7 +411,7 @@
                 <div class="mb-3">
                   <span class="font-inter font-semibold text-base">Passenger Name*</span>
                 </div>
-                <input type="text" placeholder="Enter your name" class="input font-inter input-bordered w-full" required/>
+                <input id="passengerNameInput" type="text" placeholder="Enter your name" class="input font-inter input-bordered w-full" required/>
               </label>
               <!-- Phone Number* -->
               <label class="form-control w-full py-3">
@@ -430,7 +430,7 @@
               </label>
               <!-- Submit Button -->
               <button id="nextButton" for="my_modal_7"
-                class="py-5 w-full my-6 bg-[#1DD100] rounded-lg text-inter text-base font-semibold text-white disabled:bg-[#F7F8F8]" type="submit" >Next</button>
+                class="py-5 w-full my-6 bg-[#1DD100] hover:bg-[#1cd100bf] rounded-lg text-inter text-base font-semibold text-white" type="submit" >Next</button>
               <!-- T&C -->
               <p class="w-4/5 m-auto flex justify-between font-normal text-base underline text-[#03071266]">
                 <a class="font-inter" href="">Terms and Conditions</a>
@@ -489,7 +489,7 @@
         <img src="./images/success.png" alt="">
       </div>
       <h3 class="text-2xl font-bold font-bold text-[#27AE60] mt-9 font-roboto">SUCCESS</h3>
-      <p class="py-4 text-xl font-roboto font-medium text-[#4A4A4A] ">Thank you for booking our bus seats! We're committed to finding you the best service and deals.</p>
+      <p class="py-4 text-xl font-roboto font-medium text-[#4A4A4A] ">Thank you for Booking Our Bus Seats.<br>We are working hard to find the best service and deals for you.</p>
       <p class="font-light font-roboto text-xl text-[#4A4A4A]">Shortly you will find a confirmation in your email.</p>
       <div>
         <button id="continueButton" class="px-16 md:px-28 py-4 bg-[#27AE60] rounded-3xl text-xl font-roboto font-bold mt-5 text-white">Continue</button>
@@ -514,7 +514,7 @@
     <label class="modal-backdrop" for="warning_modal">Close</label>
   </div>
 
-  <script src="./js/main.js"></script>
+  <script src="./js/main.js?v=2"></script>
 </body>
 
 </html>
