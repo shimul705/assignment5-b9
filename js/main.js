@@ -20,7 +20,7 @@ function selectSeat(seatID) {
 
   // Ensure maximum of 4 seats can be selected
   if (selectedSeats.length >= 4) {
-    alert('Maximum 4 seats can be selected.');
+    showWarning('Seat Limit Reached', 'You can select maximum 4 seats at a time.');
     return;
   }
 
@@ -105,7 +105,7 @@ function applyCoupon() {
   // Check if minimum 4 seats are selected
   const selectedSeatCount = parseInt(document.getElementById('badge').textContent);
   if (selectedSeatCount < 4) {
-    alert('Minimum 4 seats must be selected to apply coupon.');
+    showWarning('Not Enough Seats', 'Minimum 4 seats must be selected to apply coupon.');
     return;
   }
 
@@ -118,7 +118,7 @@ function applyCoupon() {
   if (couponInput in couponDiscounts) {
     grandTotal = totalPrice * couponDiscounts[couponInput];
   } else {
-    alert('Invalid coupon code.');
+    showWarning('Invalid Coupon', 'Please enter a valid coupon code (NEW15 or Couple 20).');
     return;
   }
 
@@ -195,3 +195,10 @@ continueButton.addEventListener('click', function () {
 });
 
 
+// ===========================================
+// Warning modal (instead of browser alert)
+function showWarning(title, message) {
+  document.getElementById('warningTitle').innerText = title;
+  document.getElementById('warningMessage').innerText = message;
+  document.getElementById('warning_modal').checked = true;
+}

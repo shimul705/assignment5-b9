@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -21,9 +21,9 @@
   <header class="w-10/12 m-auto">
     <!-- This is navbar section -->
     <nav>
-      <div class="navbar bg-base-100 pt-16">
+      <div class="navbar bg-base-100 px-0 pt-8 lg:pt-16">
         <div class="navbar-start">
-          <a class="text-4xl font-extrabold">SM Ticket</a>
+          <a class="text-2xl sm:text-4xl font-extrabold">SM Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-lg font-medium">
@@ -34,7 +34,7 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <button class="flex items-center py-4 px-7 text-xl font-bold
+          <button class="flex items-center py-2 px-4 sm:py-4 sm:px-7 text-base sm:text-xl font-bold
           hover:bg-[#c5edbfbf] bg-[#1DD1001A] border-2 border-[#1DD10066] text-[#1DD100] rounded-md">Bus
             <img class="ml-3" src="./images/bus-icon.png" alt="">
           </button>
@@ -45,55 +45,55 @@
 
     <!-- Header content Section -->
     <section class="relative">
-      <div class="hero lg:h-[47rem] bg-cover bg-center bg-no-repeat rounded-[2.8rem] mt-8"
+      <div class="hero lg:h-[47rem] bg-cover bg-center bg-no-repeat rounded-3xl lg:rounded-[2.8rem] mt-8"
         style="background-image: url(./images/banner.png);">
-        <div class="hero-content text-center ">
-          <div class="w-4/5">
-            <h1 class="mb-5 text-6xl font-extrabold flex flex-col gap-8">
+        <div class="hero-content text-center py-16 lg:py-4">
+          <div class="w-full md:w-4/5">
+            <h1 class="mb-5 text-4xl md:text-6xl font-extrabold flex flex-col gap-3 md:gap-8">
               <span class="text-white">End-to-End Travel</span>
               <span class="text-[#1DD100]">SM Paribahan</span>
             </h1>
-            <p class="mt-5 text-white font-normal text-lg">Experience seamless travel with SM Paribahan. Our integrated testing features enable you to run unit tests and conveniently view the results directly within the app, ensuring a streamlined process from start to finish.</p>
+            <p class="mt-5 text-white font-normal text-base md:text-lg">Experience seamless travel with SM Paribahan. Our integrated testing features enable you to run unit tests and conveniently view the results directly within the app, ensuring a streamlined process from start to finish.</p>
             <button onclick="scrollToSection()" class="mt-8 py-5 px-7 text-xl font-bold bg-[#1DD100] rounded-xl" >Buy Tickets</button>
             
           </div>
         </div>
       </div>
       <!-- ======================================================================= -->
-      <div class="w-full flex justify-center absolute -bottom-14">
-        <div class="flex gap-7">
+      <div class="w-full flex justify-center mt-6 xl:mt-0 xl:absolute xl:-bottom-14">
+        <div class="flex flex-col md:flex-row w-full xl:w-auto gap-4 md:gap-7">
           <!-- sat 1 -->
-          <div class="py-9 px-8 flex justify-center gap-4 bg-white border-[#1DD100] border-b-4 rounded-3xl">
+          <div class="md:flex-1 xl:flex-none py-6 px-6 lg:py-9 lg:px-8 flex md:flex-col xl:flex-row md:text-center xl:text-left justify-center items-center gap-4 bg-white border-[#1DD100] border-2 border-b-4 xl:border-0 xl:border-b-4 rounded-3xl">
             <div>
               <img src="./images/people.png" alt="">
             </div>
             
             <div>
-              <h1 class="text-4xl font-inter font-bold">500K+</h1>
+              <h1 class="text-3xl lg:text-4xl font-inter font-bold">500K+</h1>
               <p class="text-lg font-inter font-normal">Registered users</p>
             </div>
           </div>
 
           <!-- Stat2 -->
-          <div class="py-9 px-8 flex justify-center gap-4 bg-white border-[#1DD100] border-b-4 rounded-3xl">
+          <div class="md:flex-1 xl:flex-none py-6 px-6 lg:py-9 lg:px-8 flex md:flex-col xl:flex-row md:text-center xl:text-left justify-center items-center gap-4 bg-white border-[#1DD100] border-2 border-b-4 xl:border-0 xl:border-b-4 rounded-3xl">
             <div>
               <img src="./images/ticket-cupon.png" alt="">
             </div>
             
             <div>
-              <h1 class="text-4xl font-inter font-bold">1.7 lacks</h1>
+              <h1 class="text-3xl lg:text-4xl font-inter font-bold">1.7 lacks</h1>
               <p class="text-lg font-inter font-normal">Tickets sold</p>
             </div>
           </div>
 
           <!-- Stat3 -->
-          <div class="py-9 px-8 flex justify-center gap-4 bg-white border-[#1DD100] border-b-4 rounded-3xl">
+          <div class="md:flex-1 xl:flex-none py-6 px-6 lg:py-9 lg:px-8 flex md:flex-col xl:flex-row md:text-center xl:text-left justify-center items-center gap-4 bg-white border-[#1DD100] border-2 border-b-4 xl:border-0 xl:border-b-4 rounded-3xl">
             <div>
               <img src="./images/stoppage.png" alt="">
             </div>
             
             <div>
-              <h1 class="text-4xl font-inter font-bold">80K+</h1>
+              <h1 class="text-3xl lg:text-4xl font-inter font-bold">80K+</h1>
               <p class="text-lg font-inter font-normal">Rental partners</p>
             </div>
           </div>
@@ -119,26 +119,26 @@
 
     <!-- Best offers for you -->
     <section class="w-10/12 m-auto">
-      <h1 class="text-center font-bold text-4xl mt-40 mb-12">Best offers for you</h1>
+      <h1 class="text-center font-bold text-3xl md:text-4xl mt-20 xl:mt-40 mb-12">Best offers for you</h1>
 
       <!--------------- Coupon ticket card ---------------->
-      <div class="flex gap-8">
+      <div class="flex flex-col xl:flex-row gap-8">
 
         <!-------- coupon card 1 --------->
         <div class="card gap-5 flex-row w-full bg-[#FFBF0F]">
 
           <!-- 1.1 -->
-          <div class="card-body pl-16 py-11 m-auto">
-            <h2 class="text-[#030712CC] font-black text-5xl font-inter">15% OFF</h2>
-            <h2 class="font-inter font-semibold text-2xl">on your next purchase</h2>
-            <p class="font-inter font-medium text-xl text-[#03071280]">use by January 2024</p>
+          <div class="card-body px-0 pl-6 md:pl-16 py-8 md:py-11 m-auto">
+            <h2 class="text-[#030712CC] font-black text-3xl md:text-5xl xl:text-4xl 2xl:text-5xl font-inter">15% OFF</h2>
+            <h2 class="font-inter font-semibold text-lg md:text-2xl xl:text-xl 2xl:text-2xl">on your next purchase</h2>
+            <p class="font-inter font-medium text-base md:text-xl text-[#03071280]">use by January 2024</p>
           </div>
 
           <figure><img class="h-full" src="./images/cupon-devider.png" alt="Shoes" /></figure>
           <!-- 1.2 -->
-          <div class="card-body py-16 text-center m-auto">
-            <h1 class="font-bold text-4xl">NEW15</h1>
-            <p class="text-[#03071280] font-medium text-2xl">Coupon Code</p>
+          <div class="card-body px-4 md:px-8 py-8 md:py-16 text-center m-auto">
+            <h1 class="font-bold text-2xl md:text-4xl xl:text-3xl 2xl:text-4xl">NEW15</h1>
+            <p class="text-[#03071280] font-medium text-base md:text-2xl xl:text-xl 2xl:text-2xl">Coupon Code</p>
           </div>
         </div>
 
@@ -146,17 +146,17 @@
         <!-- Couple 20 Coupon Code -->
         <div class="card gap-5 flex-row w-full bg-[#F78C9C]">
           <!-- 2.1 -->
-          <div class="card-body pl-16 py-11 m-auto">
-            <h2 class="text-[#030712CC] font-black text-5xl font-inter">20% OFF</h2>
-            <h2 class="font-inter font-semibold text-2xl">on your next purchase</h2>
-            <p class="font-inter font-medium text-xl text-[#03071280]">use by January 2024</p>
+          <div class="card-body px-0 pl-6 md:pl-16 py-8 md:py-11 m-auto">
+            <h2 class="text-[#030712CC] font-black text-3xl md:text-5xl xl:text-4xl 2xl:text-5xl font-inter">20% OFF</h2>
+            <h2 class="font-inter font-semibold text-lg md:text-2xl xl:text-xl 2xl:text-2xl">on your next purchase</h2>
+            <p class="font-inter font-medium text-base md:text-xl text-[#03071280]">use by January 2024</p>
           </div>
 
           <figure><img class="h-full" src="./images/cupon-devider.png" alt="Shoes" /></figure>
           <!-- 2.2 -->
-          <div class="card-body py-16 text-center m-auto">
-            <h1 class="font-bold text-4xl">Couple 20</h1>
-            <p class="text-[#03071280] font-medium text-2xl">Coupon Code</p>
+          <div class="card-body px-4 md:px-8 py-8 md:py-16 text-center m-auto">
+            <h1 class="font-bold text-2xl md:text-4xl xl:text-3xl 2xl:text-4xl">Couple 20</h1>
+            <p class="text-[#03071280] font-medium text-base md:text-2xl xl:text-xl 2xl:text-2xl">Coupon Code</p>
           </div>
 
         </div>
@@ -178,34 +178,34 @@
     <section id="Paribahan">
       <!-- -----------------------------------------Heading------------------------------------------- -->
 
-      <div class="bg-[#F7F8F8] mt-28 rounded-t-[88px] border-[#1DD100] border-t-2">
+      <div class="bg-[#F7F8F8] mt-28 rounded-t-[48px] md:rounded-t-[88px] border-[#1DD100] border-t-2">
 
-        <div class="w-10/12 m-auto pb-28">
-          <h1 class="text-center font-bold text-4xl pt-28">SM Paribahan</h1>
-          <p class="w-3/4 m-auto text-center font-normal text-lg pt-6">Discover effortless ticket selection on SM Paribahan, where integrated testing features let you run unit tests directly in the app for a seamless experience.</p>
+        <div class="w-11/12 md:w-10/12 m-auto pb-16 md:pb-28">
+          <h1 class="text-center font-bold text-3xl md:text-4xl pt-16 md:pt-28">SM Paribahan</h1>
+          <p class="w-full md:w-3/4 m-auto text-center font-normal text-base md:text-lg pt-6">Discover effortless ticket selection on SM Paribahan, where integrated testing features let you run unit tests directly in the app for a seamless experience.</p>
 
 
           <!-------------------TOP PART =====Green line Paribahan =====White DIV=====----------------- -->
 
-          <div class="card flex-row w-full bg-[#FFF] mt-12 mb-8">
+          <div class="card flex-col lg:flex-row w-full bg-[#FFF] mt-12 mb-8">
 
             <!-- INNER 1st DIV of White DIV -->
-            <div class="w-full p-8">
+            <div class="w-full p-5 md:p-8">
 
               <!-- TOP PART ---Green line -->
-              <div class="flex flex-wrap align-middle mb-6 w-full">
+              <div class="flex flex-wrap items-center gap-y-4 mb-6 w-full">
 
                 <div class="flex align-middle">
                   <img src="./images/bus-logo.png" alt="">
                 </div>
 
                 <div class="flex-1 ml-4">
-                  <h1 class="font-bold text-3xl">Greenline Paribahan</h1>
+                  <h1 class="font-bold text-2xl md:text-3xl">Greenline Paribahan</h1>
                   <p class="font-inter">Coach-009-WEB ! AC_Business</p>
                 </div>
 
                 <div
-                  class="flex justify-center items-center bg-[#1DD10026] text-[#1DD100] text-lg font-medium gap-1 px-4 rounded-xl">
+                  class="flex justify-center items-center bg-[#1DD10026] text-[#1DD100] text-lg font-medium gap-1 px-4 py-2 rounded-xl">
                   <span><img src="./images/seat-green.png" alt=""></span>
                   <span class="font-inter" id="totalSeats">40</span>
                   <span class="font-inter">Seats left</span>
@@ -213,18 +213,18 @@
               </div>
 
               <!-- TOP PART ---Route -->
-              <div class="bg-[#F7F8F8] p-8 rounded-3xl">
-                <div class="flex justify-between font-semibold text-lg">
+              <div class="bg-[#F7F8F8] p-5 md:p-8 rounded-3xl">
+                <div class="flex justify-between gap-4 font-semibold text-base md:text-lg">
                   <span class="text-[#03071299]">Route</span>
                   <span>Dhaka - Sylhet</span>
                 </div>
                 <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
-                <div class="flex justify-between font-semibold text-lg">
+                <div class="flex justify-between gap-4 font-semibold text-base md:text-lg">
                   <span class="text-[#03071299]">Departure Time</span>
                   <span>9:00 PM</span>
                 </div>
                 <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
-                <div class="grid grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                   <div class="col-span-1 bg-[#0307120D] px-5 py-5 rounded-lg text-center"><span
                       class="font-inter font-medium text-base">Boarding Point - Laxmipur</span></div>
                   <div class="col-span-1 bg-[#0307120D] px-5 py-5 rounded-lg text-center"><span
@@ -236,10 +236,10 @@
             </div>
 
             <!-- divider -->
-            <img src="./images/info-devider.png" alt="">
+            <img class="hidden lg:block" src="./images/info-devider.png" alt="">
 
             <!-- INNER 2nd DIV of White DIV -->
-            <div class="py-32 pl-6 pr-16 m-auto">
+            <div class="w-full lg:w-auto py-8 lg:py-32 px-6 lg:pl-6 lg:pr-16 m-auto border-t-2 border-dashed border-[#1DD100] lg:border-0">
               <img class="m-auto" src="./images/fare.png" alt="">
               <h1 class="m-auto text-center font-bold text-4xl text-nowrap">550 Taka</h1>
               <p class="m-auto text-center font-semibold text-2xl text-[#03071299]">Per Seat</p>
@@ -247,10 +247,10 @@
           </div>
 
           <!--BOTTOM PART -- ---------------------Select Your Seat---------------------- -->
-          <div class="bg-white rounded-3xl grid grid-cols-11 py-8">
+          <div class="bg-white rounded-3xl grid grid-cols-1 xl:grid-cols-11 gap-10 xl:gap-0 py-8">
 
             <!-- LEFT side -->
-            <div class="px-8 col-span-7 border-r-2 border-dashed bprder-[0307124D]">
+            <div class="px-4 md:px-8 xl:col-span-7 xl:border-r-2 border-dashed bprder-[0307124D]">
               <h1 class="font-inter font-semibold text-2xl">Select Your Seat</h1>
 
               <hr class="mt-6 mb-4 border-t-2 border-dashed border-[#03071233]">
@@ -271,90 +271,90 @@
 
               <!-- -----Ticket selection------- -->
 
-              <div class="text-lg w-full font-medium text-[#03071280] flex justify-between items-center">
+              <div class="text-base md:text-lg w-full font-medium text-[#03071280] flex justify-between items-center gap-3 md:gap-8">
                 <!-- Left Seat -->
                 
-                <div class="grid grid-cols-5 grid-rows-3 gap-8">
+                <div class="flex-[5] xl:flex-none grid grid-cols-5 grid-rows-3 gap-2 sm:gap-4 xl:gap-8">
                   <div class="col-span-1"></div>
-                  <div class="col-span-2 px-11 py-4"></div>
-                  <div class="col-span-2 px-11 py-4"></div>
+                  <div class="col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4"></div>
+                  <div class="col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4"></div>
                   <!-- A -->
                   <p class="font-inter col-span-1 text-center m-auto">A</p>
-                  <button id="A1" onclick="selectSeat('A1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A1</button>
-                  <button id="A2" onclick="selectSeat('A2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A2</button>
+                  <button id="A1" onclick="selectSeat('A1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">A1</button>
+                  <button id="A2" onclick="selectSeat('A2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">A2</button>
                   <!-- B -->
                   <p class="font-inter col-span-1 text-center m-auto">B</p>
-                  <button id="B1" onclick="selectSeat('B1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B1</button>
-                  <button id="B2" onclick="selectSeat('B2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B2</button>
+                  <button id="B1" onclick="selectSeat('B1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">B1</button>
+                  <button id="B2" onclick="selectSeat('B2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">B2</button>
                   <!-- C -->
                   <p class="font-inter col-span-1 text-center m-auto">C</p>
-                  <button id="C1" onclick="selectSeat('C1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">C1</button>
-                  <button id="C2" onclick="selectSeat('C2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">C2</button>
+                  <button id="C1" onclick="selectSeat('C1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">C1</button>
+                  <button id="C2" onclick="selectSeat('C2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">C2</button>
                   <!-- D -->
                   <p class="font-inter col-span-1 text-center m-auto">D</p>
-                  <button id="D1" onclick="selectSeat('D1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">D1</button>
-                  <button id="D2" onclick="selectSeat('D2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">D2</button>
+                  <button id="D1" onclick="selectSeat('D1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">D1</button>
+                  <button id="D2" onclick="selectSeat('D2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">D2</button>
                   <!-- E -->
                   <p class="font-inter col-span-1 text-center m-auto">E</p>
-                  <button id="E1" onclick="selectSeat('E1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">E1</button>
-                  <button id="E2" onclick="selectSeat('E2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">E2</button>
+                  <button id="E1" onclick="selectSeat('E1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">E1</button>
+                  <button id="E2" onclick="selectSeat('E2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">E2</button>
                   <!-- F -->
                   <p class="font-inter col-span-1 text-center m-auto">F</p>
-                  <button id="F1" onclick="selectSeat('F1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">F1</button>
-                  <button id="F2" onclick="selectSeat('F2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">F2</button>
+                  <button id="F1" onclick="selectSeat('F1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">F1</button>
+                  <button id="F2" onclick="selectSeat('F2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">F2</button>
                   <!-- G -->
                   <p class="font-inter col-span-1 text-center m-auto">G</p>
-                  <button id="G1" onclick="selectSeat('G1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">G1</button>
-                  <button id="G2" onclick="selectSeat('G2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">G2</button>
+                  <button id="G1" onclick="selectSeat('G1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">G1</button>
+                  <button id="G2" onclick="selectSeat('G2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">G2</button>
                   <!-- H -->
                   <p class="font-inter col-span-1 text-center m-auto">H</p>
-                  <button id="H1" onclick="selectSeat('H1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">H1</button>
-                  <button id="H2" onclick="selectSeat('H2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">H2</button>
+                  <button id="H1" onclick="selectSeat('H1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">H1</button>
+                  <button id="H2" onclick="selectSeat('H2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">H2</button>
                   <!-- i -->
                   <p class="font-inter col-span-1 text-center m-auto">I</p>
-                  <button id="I1" onclick="selectSeat('I1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">I1</button>
-                  <button id="I2" onclick="selectSeat('I2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">I2</button>
+                  <button id="I1" onclick="selectSeat('I1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">I1</button>
+                  <button id="I2" onclick="selectSeat('I2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">I2</button>
                   <!-- J -->
                   <p class="font-inter col-span-1 text-center m-auto">J</p>
-                  <button id="J1" onclick="selectSeat('J1')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">J1</button>
-                  <button id="J2" onclick="selectSeat('J2')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">J2</button>
+                  <button id="J1" onclick="selectSeat('J1')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">J1</button>
+                  <button id="J2" onclick="selectSeat('J2')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">J2</button>
                 </div>
 
                 <!-- Right Seat -->
-                <div class="grid grid-cols-4 gap-8">
-                  <div class="col-span-2 px-11 py-4"></div>
-                  <button class="col-span-2 px-11 py-4 bg-[#0307121A] rounded-xl"><img src="./images/wheel.png" alt=""></button>
-                  <button id="A3" onclick="selectSeat('A3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A3</button>
-                  <button id="A4" onclick="selectSeat('A4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">A4</button>
-                  <button id="B3" onclick="selectSeat('B3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B3</button>
-                  <button id="B4" onclick="selectSeat('B4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">B4</button>
-                  <button id="C3" onclick="selectSeat('C3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">C3</button>
-                  <button id="C4" onclick="selectSeat('C4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">C4</button>
-                  <button id="D3" onclick="selectSeat('D3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">D3</button>
-                  <button id="D4" onclick="selectSeat('D4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">D4</button>
-                  <button id="E3" onclick="selectSeat('E3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">E3</button>
-                  <button id="E4" onclick="selectSeat('E4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">E4</button>
-                  <button id="F3" onclick="selectSeat('F3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">F3</button>
-                  <button id="F4" onclick="selectSeat('F4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">F4</button>
-                  <button id="G3" onclick="selectSeat('G3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">G3</button>
-                  <button id="G4" onclick="selectSeat('G4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">G4</button>
-                  <button id="H3" onclick="selectSeat('H3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">H3</button>
-                  <button id="H4" onclick="selectSeat('H4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">H4</button>
-                  <button id="I3" onclick="selectSeat('I3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">I3</button>
-                  <button id="I4" onclick="selectSeat('I4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">I4</button>
-                  <button id="J3" onclick="selectSeat('J3')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">J3</button>
-                  <button id="J4" onclick="selectSeat('J4')" class="hover:bg-gray-300 col-span-2 px-11 py-4 font-inter bg-[#F7F8F8] rounded-xl">J4</button>
+                <div class="flex-[4] xl:flex-none grid grid-cols-4 gap-2 sm:gap-4 xl:gap-8">
+                  <div class="col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4"></div>
+                  <button class="col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 bg-[#0307121A] rounded-xl"><img src="./images/wheel.png" alt=""></button>
+                  <button id="A3" onclick="selectSeat('A3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">A3</button>
+                  <button id="A4" onclick="selectSeat('A4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">A4</button>
+                  <button id="B3" onclick="selectSeat('B3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">B3</button>
+                  <button id="B4" onclick="selectSeat('B4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">B4</button>
+                  <button id="C3" onclick="selectSeat('C3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">C3</button>
+                  <button id="C4" onclick="selectSeat('C4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">C4</button>
+                  <button id="D3" onclick="selectSeat('D3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">D3</button>
+                  <button id="D4" onclick="selectSeat('D4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">D4</button>
+                  <button id="E3" onclick="selectSeat('E3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">E3</button>
+                  <button id="E4" onclick="selectSeat('E4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">E4</button>
+                  <button id="F3" onclick="selectSeat('F3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">F3</button>
+                  <button id="F4" onclick="selectSeat('F4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">F4</button>
+                  <button id="G3" onclick="selectSeat('G3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">G3</button>
+                  <button id="G4" onclick="selectSeat('G4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">G4</button>
+                  <button id="H3" onclick="selectSeat('H3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">H3</button>
+                  <button id="H4" onclick="selectSeat('H4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">H4</button>
+                  <button id="I3" onclick="selectSeat('I3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">I3</button>
+                  <button id="I4" onclick="selectSeat('I4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">I4</button>
+                  <button id="J3" onclick="selectSeat('J3')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">J3</button>
+                  <button id="J4" onclick="selectSeat('J4')" class="hover:bg-gray-300 col-span-2 px-1 sm:px-6 xl:px-11 py-3 md:py-4 font-inter bg-[#F7F8F8] rounded-xl">J4</button>
                 </div>
               </div>
 
             </div>
 
             <!-- RIGHT side -->
-            <div class="px-8 col-span-4">
+            <div class="px-4 md:px-8 xl:col-span-4">
               <h1 class="font-inter font-semibold text-2xl">Select Your Seat</h1>
               <hr class="my-6 border-t-2 border-dashed border-[#03071233]">
               <!-- Seat Class Price -->
-              <div class="bg-[#F7F8F8] rounded-xl p-8 mb-8">
+              <div class="bg-[#F7F8F8] rounded-xl p-5 md:p-8 mb-8">
 
                 <!-- ================================================================ -->
                 <ul class="font-medium text-base">
@@ -451,13 +451,13 @@
 
   <footer class="bg-[#030712]">
     <div class="w-10/12 m-auto">
-      <div class="flex justify-between pt-28 pb-12">
+      <div class="flex flex-col md:flex-row gap-8 justify-between pt-16 md:pt-28 pb-12">
         <div class="">
           <h1 class="font-extrabold text-4xl text-white mb-4">SM Ticket</h1>
-          <p class="font-normal font-inter text-lg text-[#FFFFFFCD] w-2/3">Enhance your daily commute with SM Ticket, a digital platform dedicated to improving your travel experience.</p>
+          <p class="font-normal font-inter text-base md:text-lg text-[#FFFFFFCD] md:w-2/3">Enhance your daily commute with SM Ticket, a digital platform dedicated to improving your travel experience.</p>
         </div>
-        <div class="flex flex-col justify-end">
-          <h1 class="font-semibold text-xl text-white text-right mb-5">Download our app</h1>
+        <div class="flex flex-col shrink-0 justify-end items-start md:items-end">
+          <h1 class="font-semibold text-xl text-white md:text-right mb-5">Download our app</h1>
           <img src="./images/Group 104.png" alt="">
         </div>
       </div>
@@ -465,10 +465,10 @@
       <hr class="mb-8 border-t-2 border-dashed border-[#FFFFFF4D]">
 
       <!-- lower part of footer -->
-      <div class="flex justify-between pb-28">
+      <div class="flex flex-col md:flex-row gap-6 justify-between pb-16 md:pb-28">
         <h1 class="font-inter font-normal text-base text-[#FFFFFFB3]">@all rights reserved, SM Ticket services
           limited.2024</h1>
-        <ul class="flex text-base text-white gap-8 ">
+        <ul class="flex flex-wrap text-base text-white gap-4 md:gap-8 ">
           <li class="font-inter">Terms & condition</li>
           <li class="font-inter">Return & refund policy</li>
           <li class="font-inter">Privacy policy</li>
@@ -484,7 +484,7 @@
 
   <input type="checkbox" id="my_modal_7" class="modal-toggle" />
   <div class="modal" role="dialog">
-    <div class="modal-box flex justify-center flex-col text-center p-14 max-w-none w-1/3">
+    <div class="modal-box flex justify-center flex-col text-center p-8 md:p-14 max-w-none w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3">
       <div class="flex justify-center">
         <img src="./images/success.png" alt="">
       </div>
@@ -492,10 +492,26 @@
       <p class="py-4 text-xl font-roboto font-medium text-[#4A4A4A] ">Thank you for booking our bus seats! We're committed to finding you the best service and deals.</p>
       <p class="font-light font-roboto text-xl text-[#4A4A4A]">Shortly you will find a confirmation in your email.</p>
       <div>
-        <button id="continueButton" class="px-28 py-4 bg-[#27AE60] rounded-3xl text-xl font-roboto font-bold mt-5 text-white">Continue</button>
+        <button id="continueButton" class="px-16 md:px-28 py-4 bg-[#27AE60] rounded-3xl text-xl font-roboto font-bold mt-5 text-white">Continue</button>
       </div>
     </div>
     <label class="modal-backdrop" for="my_modal_7">Close</label>
+  </div>
+
+  <!-- Warning modal (max seats / coupon messages) -->
+  <input type="checkbox" id="warning_modal" class="modal-toggle" />
+  <div class="modal" role="dialog">
+    <div class="modal-box flex justify-center flex-col text-center p-8 md:p-12 max-w-none w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3">
+      <div class="flex justify-center">
+        <span class="w-24 h-24 flex items-center justify-center rounded-full bg-[#FFBF0F33] text-[#E5A800] text-6xl font-black">!</span>
+      </div>
+      <h3 id="warningTitle" class="text-2xl font-bold text-[#E5A800] mt-8 font-roboto">WARNING</h3>
+      <p id="warningMessage" class="py-4 text-xl font-roboto font-medium text-[#4A4A4A]"></p>
+      <div>
+        <label for="warning_modal" class="btn border-none h-auto px-16 md:px-24 py-4 bg-[#1DD100] hover:bg-[#1cd100bf] rounded-3xl text-xl font-roboto font-bold mt-3 text-white">OK</label>
+      </div>
+    </div>
+    <label class="modal-backdrop" for="warning_modal">Close</label>
   </div>
 
   <script src="./js/main.js"></script>
